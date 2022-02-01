@@ -167,12 +167,13 @@ footer li a:hover {
     width: 80px;
     animation: dash5 40s ease-in-out 1s infinite alternate-reverse;
 }
-.flex{
+.container{
     display: flex;
     position: relative;
     border-style: solid;
     width: 160px;
     height: 160px;
+    float: right;
 
 }
 @keyframes dash{
@@ -372,12 +373,13 @@ footer li a:hover {
         height: 40px;
         width: 40px;
         animation: dash5 40s ease-in-out 1s infinite alternate-reverse}
-    .flex{
+    .container{
         display: flex;
         position: relative;
         border-style: solid;
         width: 80px;
         height: 80px;
+        float: left;
     
     }
     @keyframes dash{
