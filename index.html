@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Jr</title>
+    <script src="jquery-3.5.1.min.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Jaider Rojas Amesquita</h1>
         <nav>
             <button><a href="#">Incio</a></button>
-            <button class="nav-button2"><a href="#">Servicios</a> </button>
+            <button class="nav-button2"><a href="#">Servicios</a>
+                <div class="submenu">
+                    <a href="#">Desarrollo</a>
+                    <a href="#">Analisis</a>
+                </div>
+            </button>
             <button><a href="#">Sobre mi</a> </button>
         </nav>
     </header>
@@ -25,12 +33,11 @@
         <aside>
             <div class="container">
                 <div id="transition"></div>
-                <div id="shadow">
-                    <img src="images/Jr.png" alt="garabato" width="10%" height="10%">
-                </div>
+                <div id="shadow"></div>
                 <div id="transform"></div>
                 <div id="four"></div>
-                <div id="five"></div>
+                <div id="five">
+                </div>
             </div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, maiores numquam doloremque, distinctio
                 praesentium animi blanditiis unde mollitia repellendus ratione tempora tenetur ea fugiat iure
@@ -57,8 +64,20 @@
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contactos</a></li>
             </ul>
-            <p>&copy; All rights reserved.</p>
+            <p>&copy; All rights reserved.
+                <img src="images/Jr.png" alt="garabato" width="5%" height="5%">
+            </p>
         </div>
     </footer>
+    <script>
+        //funcion de movimiento del submenú
+        $(function () {
+            $(".nav-button2").click(function () {
+                $(".submenu").slideToggle(500);
+            });
+        });
+    </script>
+    <script src="MyScript.js"></script>
 </body>
+
 </html>
